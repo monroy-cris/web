@@ -1,0 +1,187 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+h1 {
+    font-size: 100px;
+    color: black;
+    margin-bottom: 0;
+}
+
+#menu {
+    display: flex;
+    background-color: #000;
+    height: 120px;
+    color: white;
+    padding: 0 20px;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    justify-content: center;
+}
+
+#menu ul {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+#menu ul li {
+    margin: 0 30px;
+}
+
+#menu ul li a {
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: block;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    font-weight: bold;
+}
+
+#menu ul li a:hover {
+    transform: translateY(3px);
+    background-color: #FFA500;
+}
+
+h2 {
+    color: black;
+    font-size: 40px;
+    margin-bottom: 20px;
+    margin-top: 0;
+    text-align: center;
+    background-color: #FFA500;
+}
+
+#container {
+    padding: 80px 40px;
+    text-align: center;
+}
+
+#quienes-somos {
+    display: flex;
+    align-items: center;
+    padding: 40px;
+    background-color: #f4f4f4;
+}
+
+.text-container {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.image-container {
+    flex: 1;
+}
+
+.image-container img {
+    width: 100%;
+    border-radius: 20px;
+    max-width: 600px;
+}
+
+h3 {
+    color: black;
+    font-size: 55px;
+}
+
+p {
+    font-size: 22px;
+}
+
+.additional-content {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 40px;
+    background-color: #f4f4f4;
+    margin-top: 20px;
+}
+
+.gif-container {
+    width: 100%;
+    text-align: center;
+    max-width: 650px;
+}
+
+.gif-image {
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+}
+
+.video-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 100px;
+}
+
+footer {
+    background-color: #FFA500;
+    color: black;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-message {
+    background-color: #000;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 40px;
+}
+
+nav ul li {
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f8b400;
+    min-width: 160px;
+    z-index: 1;
+}
+
+nav ul li:hover .dropdown-content {
+    display: block;
+}
+
+.photo {
+    width: 100%;
+    height: 700px;
+    position: relative;
+    overflow: hidden;
+}
+
+.photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    opacity: 0.75;
+}
+
+.photo-text {
+    position: relative;
+    z-index: 1;
+    min-height: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    text-align: center;
+}
